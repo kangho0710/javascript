@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> for문 </title>
+<style>
+*{margin: 0;}
+.red{color: #f00;}
+.green{color: rgb(29, 167, 114);}
+.aqua{color: #0ff;}
+</style>
+<script>
+    var i;
+
+    //세세한 범위부터?
+    for (i = 1; i <= 100; i++) {
+       if(i%5==0 && i%7==0){
+        document.write("<p class=aqua>"+i+"</p>");
+       } else if(i%7==0){
+        document.write("<p class=green>"+i+"</p>");
+       } else if(i%5==0){
+        document.write("<p class=red>"+i+"</p>");
+       }
+        
+    }
+
+</script>
+</head>
+<body>
+</body>
+</html>

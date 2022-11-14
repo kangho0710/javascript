@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 사용자 정의 객체 </title>
+<script>
+
+	var tv = new Object();
+	tv.color = "white";
+	tv.price = 300000;
+
+	tv.info = function(){
+		document.write("tv색상: " + tv.color, "<br>");
+		document.write("tv 가격: " + tv.price, "<br>");
+	}
+
+
+	var car ={
+		color : "black",
+		price : 500000,
+		info : function(){
+			document.write("car 색상: " + car.color, "<br>");
+			document.write("car 가격: " + car.price, "<br>");
+
+		}
+
+	}
+
+
+
+	document.write("<h1>tv 객체 메서드 호출</h1>");
+	tv.info();
+
+	document.write("tv의 타입: " + typeof tv, "<br>");
+	document.write("tv 색상 타입: " + typeof tv.color, "<br>");
+	document.write("tv 가격 타입: " + typeof tv.price, "<br>");
+	document.write("tv.info의 타입: " + typeof tv.info, "<br>");
+
+	document.write("<h1>car 객체 메서드 호출</h1>");
+	car.info();
+	document.write("car의 타입: " + typeof car, "<br>");
+	document.write("car색상 타입: " + typeof car.color, "<br>");
+      
+</script>
+</head>
+<body>
+</body>
+</html>
