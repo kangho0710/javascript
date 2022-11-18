@@ -6,7 +6,13 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function() {
-
+  var href ="http://ckh0523.dothome.co.kr/member.php?callback=myFnc";
+  $.ajax({
+    url:href,
+    dataType:"jsonp"
+  }).done(function myFnc(data){
+    console.log(data);
+  })
 });
 </script>
 </head>
